@@ -411,14 +411,14 @@ form select:invalid {
 
 .carousel-container {
     width: 100%;
-    overflow: hidden;
     position: relative;
     margin: 60px 0;
 }
 
+
 .carousel-track {
     display: flex;
-    animation: scroll 30s linear infinite;
+    animation: scroll 10s linear infinite;
 }
 
 .carousel-container:hover .carousel-track,
@@ -736,6 +736,7 @@ h3 {
     .feedback-card {
         flex-wrap: nowrap;
     }
+
 }
 
 
@@ -749,6 +750,7 @@ h3 {
         padding: 60px 80px;
     }
     
+
     .projetos, .feedbacks, .mais, .metodologia, .pratica {
         padding: 80px 80px;
     }
@@ -777,6 +779,10 @@ h3 {
         font-size: 45px;
     }
     
+.carousel-container {
+    overflow: hidden;
+}
+
     .transformar h2 {
         font-size: 50px;
     }
@@ -869,6 +875,9 @@ h3 {
     .video-container {
         width: 300px;
     }
+.carousel-container {
+    overflow: hidden;
+}
 
     .transformar h2 {
         width: 80%;
@@ -1017,6 +1026,10 @@ h3 {
         padding: 30px 20px;
     }
 
+.carousel-container {
+    overflow: hidden;
+}
+
     .carousel-track img {
         width: calc(100% / 3);
     }
@@ -1104,6 +1117,9 @@ h3 {
         width: 200px;
     }
 
+    .carousel-container {
+    overflow: hidden;
+}
     .pratica ul li {
         font-size: 20px;
     }
@@ -1160,13 +1176,27 @@ h3 {
         width: 180px;
     }
 
+    .carousel-container {
+    overflow: hidden;
+}
     .carousel-track img {
-        width: calc(100% / 1.5);
+        width: calc(100% / 2);
     }
 
-    .method-card h4 {
-        font-size: 24px;
-    }
+    .feedback-card, .method-card {
+    font-weight: 100;
+    width: 30px;
+    min-width: 300px;
+    padding: 30px;
+    background: linear-gradient(135deg, #000000, #1f1f1f);
+    border: 1px solid #fff;
+    border-radius: 30px;
+    transition: 0.3s;
+    cursor: pointer;
+    filter: blur(0);
+    scale:0.8;
+    
+}
 
     .pratica ul li {
         font-size: 18px;
