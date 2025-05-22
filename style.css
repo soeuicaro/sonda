@@ -1177,32 +1177,37 @@ h3 {
     }
 
     .carousel-container {
-    overflow: hidden;
-}
+        overflow: hidden;
+    }
+
     .carousel-track img {
         width: calc(100% / 2);
     }
 
     .feedback-card, .method-card {
-    font-weight: 100;
-    width: 30px;
-    min-width: 300px;
-    padding: 30px;
-    background: linear-gradient(135deg, #000000, #1f1f1f);
-    border: 1px solid #fff;
-    border-radius: 30px;
-    transition: 0.3s;
-    cursor: pointer;
-    filter: blur(0);
-    scale:0.8;
-    
-}
+        width: 90%; /* Full width to fit small screens */
+        min-width: 210px; /* Reduced minimum width for smaller screens */
+        background: linear-gradient(135deg, #000000, #1f1f1f);
+        transition: transform 0.3s ease; /* Keep transition for hover effect */
+        cursor: pointer;
+        filter: blur(0);
+        box-sizing: border-box; /* Ensure padding doesn't increase size */
+    }
+
+    .feedback-card h3, .method-card h4 {
+        font-size: 20px; /* Reduced heading size */
+        margin: 0 0 15px 0; /* Reduced margin */
+    }
+
+    .feedback-card p, .method-card p {
+        font-size: 14px; /* Smaller text for content */
+        margin: 0 0 15px 0;
+    }
 
     .pratica ul li {
         font-size: 18px;
     }
 }
-
 /* Landscape orientation adjustments for mobile */
 @media (max-height: 500px) and (orientation: landscape) {
     .hero {
